@@ -160,8 +160,8 @@ cp mcp-config.example.json mcp-config.json
 {
   "mcpServers": {
     "mysql-server": {
-      "command": "python",
-      "args": ["mysql_mcp_server.py"],
+      "command": "python", // 可以用项目的绝对路径 如 : /Users/baozi/python-mysql-mcp-server/venv/bin/python
+      "args": ["mysql_mcp_server.py"],  // 这里也是,如 : /Users/baozi/python-mysql-mcp-server/mysql_mcp_server.py
       "env": {
         "MYSQL_HOST": "your-mysql-host",
         "MYSQL_PORT": "3306",
