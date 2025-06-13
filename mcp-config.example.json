@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "mysql-server": {
+      "command": "python", // 这里可以用绝对路径, 如 : /Users/baozi/vxproject/python-mysql-mcp-server/venv/bin/python
+      "args": ["mysql_mcp_server.py"], // 这里也是
+      "env": {
+        "MYSQL_HOST": "localhost",
+        "MYSQL_PORT": "3306",
+        "MYSQL_DATABASE": "your-database-name",
+        "MYSQL_USER": "your-username",
+        "MYSQL_PASSWORD": "your-password",
+        "MYSQL_CHARSET": "utf8mb4"
+      }
+    }
+  }
+} 
